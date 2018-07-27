@@ -4,6 +4,6 @@ Cliente generado con wsimport
 Clase: SoapClientAxesor
 
 # Cliente Servicio Centro Zaragoza 
-## https://www.czidconnect.es:8443/messenger/services/ImplLogi
+## https://www.czidconnect.es:8443/messenger/services/ImplLogin
 Cliente generado con wsimport.
 Clase: SoapClientZaragoza
