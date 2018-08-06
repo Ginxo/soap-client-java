@@ -1,7 +1,7 @@
 package com.mingorance.soap.client.zaragoza;
 
-import com.b7f2.ws.generatebykike.bean.BeanLogin;
-import com.b7f2.ws.generatebykike.service.ImplLoginService;
+import com.b7f2.ws.kike.generatebykike.bean.BeanLogin;
+import com.b7f2.ws.kike.generatebykike.service.ImplLoginService;
 
 import java.net.MalformedURLException;
 import java.net.URL;

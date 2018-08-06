@@ -1,5 +1,5 @@
 
-package com.b7f2.ws.generatebykike.bean;
+package com.b7f2.ws.kike.generatebykike.bean;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

@@ -1,4 +1,4 @@
-package com.b7f2.ws.generatebykike.service;
+package com.b7f2.ws.kike.generatebykike.service;
 
 import java.net.MalformedURLException;
 import java.net.URL;

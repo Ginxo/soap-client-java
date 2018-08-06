@@ -1,5 +1,5 @@
 
-package com.b7f2.ws.generatebykike.service;
+package com.b7f2.ws.kike.generatebykike.bean;
 
 import javax.xml.bind.annotation.XmlRegistry;
 
@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlRegistry;
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
- * generated in the com.b7f2.ws.generatebykike.service package.
+ * generated in the com.b7f2.ws.generatebykike.bean package.
  * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
@@ -23,26 +23,18 @@ public class ObjectFactory {
 
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.b7f2.ws.generatebykike.service
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.b7f2.ws.generatebykike.bean
      * 
      */
     public ObjectFactory() {
     }
 
     /**
-     * Create an instance of {@link ValidaLogin }
+     * Create an instance of {@link BeanLogin }
      * 
      */
-    public ValidaLogin createValidaLogin() {
-        return new ValidaLogin();
-    }
-
-    /**
-     * Create an instance of {@link ValidaLoginResponse }
-     * 
-     */
-    public ValidaLoginResponse createValidaLoginResponse() {
-        return new ValidaLoginResponse();
+    public BeanLogin createBeanLogin() {
+        return new BeanLogin();
     }
 
 }

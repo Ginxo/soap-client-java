@@ -1,10 +1,12 @@
 
-package com.b7f2.ws.generatebykike.service;
+package com.b7f2.ws.kike.generatebykike.service;
 
 /**
  * Please modify this class to meet your needs
  * This class is not complete
  */
+
+import com.b7f2.ws.kike.generatebykike.bean.BeanLogin;
 
 import java.io.File;
 import java.net.MalformedURLException;
@@ -44,8 +46,8 @@ public final class ImplLogin_ImplLogin_Client {
         
         {
         System.out.println("Invoking validaLogin...");
-        com.b7f2.ws.generatebykike.bean.BeanLogin _validaLogin_obj = null;
-        com.b7f2.ws.generatebykike.bean.BeanLogin _validaLogin__return = port.validaLogin(_validaLogin_obj);
+        BeanLogin _validaLogin_obj = null;
+        BeanLogin _validaLogin__return = port.validaLogin(_validaLogin_obj);
         System.out.println("validaLogin.result=" + _validaLogin__return);
 
 

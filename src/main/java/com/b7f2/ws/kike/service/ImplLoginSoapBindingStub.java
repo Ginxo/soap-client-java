@@ -5,9 +5,11 @@
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
  */
 
-package com.b7f2.ws.service;
+package com.b7f2.ws.kike.service;
 
-public class ImplLoginSoapBindingStub extends org.apache.axis.client.Stub implements com.b7f2.ws.service.ImplLogin {
+import com.b7f2.ws.kike.bean.BeanLogin;
+
+public class ImplLoginSoapBindingStub extends org.apache.axis.client.Stub implements ImplLogin {
     private java.util.Vector cachedSerClasses = new java.util.Vector();
     private java.util.Vector cachedSerQNames = new java.util.Vector();
     private java.util.Vector cachedSerFactories = new java.util.Vector();
@@ -25,10 +27,10 @@ public class ImplLoginSoapBindingStub extends org.apache.axis.client.Stub implem
         org.apache.axis.description.ParameterDesc param;
         oper = new org.apache.axis.description.OperationDesc();
         oper.setName("validaLogin");
-        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://service.ws.b7f2.com", "obj"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://bean.ws.b7f2.com", "BeanLogin"), com.b7f2.ws.bean.BeanLogin.class, false, false);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://service.ws.b7f2.com", "obj"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://bean.ws.b7f2.com", "BeanLogin"), BeanLogin.class, false, false);
         oper.addParameter(param);
         oper.setReturnType(new javax.xml.namespace.QName("http://bean.ws.b7f2.com", "BeanLogin"));
-        oper.setReturnClass(com.b7f2.ws.bean.BeanLogin.class);
+        oper.setReturnClass(BeanLogin.class);
         oper.setReturnQName(new javax.xml.namespace.QName("http://service.ws.b7f2.com", "validaLoginReturn"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
@@ -67,7 +69,7 @@ public class ImplLoginSoapBindingStub extends org.apache.axis.client.Stub implem
             java.lang.Class simplelistdf = org.apache.axis.encoding.ser.SimpleListDeserializerFactory.class;
             qName = new javax.xml.namespace.QName("http://bean.ws.b7f2.com", "BeanLogin");
             cachedSerQNames.add(qName);
-            cls = com.b7f2.ws.bean.BeanLogin.class;
+            cls = BeanLogin.class;
             cachedSerClasses.add(cls);
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
@@ -138,7 +140,7 @@ public class ImplLoginSoapBindingStub extends org.apache.axis.client.Stub implem
         }
     }
 
-    public com.b7f2.ws.bean.BeanLogin validaLogin(com.b7f2.ws.bean.BeanLogin obj) throws java.rmi.RemoteException {
+    public BeanLogin validaLogin(BeanLogin obj) throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -162,9 +164,9 @@ public class ImplLoginSoapBindingStub extends org.apache.axis.client.Stub implem
         else {
             extractAttachments(_call);
             try {
-                return (com.b7f2.ws.bean.BeanLogin) _resp;
+                return (BeanLogin) _resp;
             } catch (java.lang.Exception _exception) {
-                return (com.b7f2.ws.bean.BeanLogin) org.apache.axis.utils.JavaUtils.convert(_resp, com.b7f2.ws.bean.BeanLogin.class);
+                return (BeanLogin) org.apache.axis.utils.JavaUtils.convert(_resp, BeanLogin.class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {

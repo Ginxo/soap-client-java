@@ -1,4 +1,6 @@
-package com.b7f2.ws.generatebykike.service;
+package com.b7f2.ws.kike.generatebykike.service;
+
+import com.b7f2.ws.kike.generatebykike.bean.BeanLogin;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -15,15 +17,15 @@ import javax.xml.ws.ResponseWrapper;
  * 
  */
 @WebService(targetNamespace = "http://service.ws.b7f2.com", name = "ImplLogin")
-@XmlSeeAlso({com.b7f2.ws.generatebykike.bean.ObjectFactory.class, ObjectFactory.class})
+@XmlSeeAlso({com.b7f2.ws.kike.generatebykike.bean.ObjectFactory.class, ObjectFactory.class})
 public interface ImplLogin {
 
     @WebMethod
-    @RequestWrapper(localName = "validaLogin", targetNamespace = "http://service.ws.b7f2.com", className = "com.b7f2.ws.generatebykike.service.ValidaLogin")
-    @ResponseWrapper(localName = "validaLoginResponse", targetNamespace = "http://service.ws.b7f2.com", className = "com.b7f2.ws.generatebykike.service.ValidaLoginResponse")
+    @RequestWrapper(localName = "validaLogin", targetNamespace = "http://service.ws.b7f2.com", className = "ValidaLogin")
+    @ResponseWrapper(localName = "validaLoginResponse", targetNamespace = "http://service.ws.b7f2.com", className = "ValidaLoginResponse")
     @WebResult(name = "validaLoginReturn", targetNamespace = "http://service.ws.b7f2.com")
-    public com.b7f2.ws.generatebykike.bean.BeanLogin validaLogin(
+    public BeanLogin validaLogin(
         @WebParam(name = "obj", targetNamespace = "http://service.ws.b7f2.com")
-        com.b7f2.ws.generatebykike.bean.BeanLogin obj
+                BeanLogin obj
     );
 }

@@ -1,12 +1,12 @@
 
-package com.b7f2.ws.generatebykike.service;
+package com.b7f2.ws.kike.generatebykike.service;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
-import com.b7f2.ws.generatebykike.bean.BeanLogin;
+import com.b7f2.ws.kike.generatebykike.bean.BeanLogin;
 
 
 /**
@@ -19,7 +19,7 @@ import com.b7f2.ws.generatebykike.bean.BeanLogin;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="obj" type="{http://bean.ws.b7f2.com}BeanLogin"/&gt;
+ *         &lt;element name="validaLoginReturn" type="{http://bean.ws.b7f2.com}BeanLogin"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -30,36 +30,36 @@ import com.b7f2.ws.generatebykike.bean.BeanLogin;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "obj"
+    "validaLoginReturn"
 })
-@XmlRootElement(name = "validaLogin")
-public class ValidaLogin {
+@XmlRootElement(name = "validaLoginResponse")
+public class ValidaLoginResponse {
 
     @XmlElement(required = true)
-    protected BeanLogin obj;
+    protected BeanLogin validaLoginReturn;
 
     /**
-     * Obtiene el valor de la propiedad obj.
+     * Obtiene el valor de la propiedad validaLoginReturn.
      * 
      * @return
      *     possible object is
      *     {@link BeanLogin }
      *     
      */
-    public BeanLogin getObj() {
-        return obj;
+    public BeanLogin getValidaLoginReturn() {
+        return validaLoginReturn;
     }
 
     /**
-     * Define el valor de la propiedad obj.
+     * Define el valor de la propiedad validaLoginReturn.
      * 
      * @param value
      *     allowed object is
      *     {@link BeanLogin }
      *     
      */
-    public void setObj(BeanLogin value) {
-        this.obj = value;
+    public void setValidaLoginReturn(BeanLogin value) {
+        this.validaLoginReturn = value;
     }
 
 }

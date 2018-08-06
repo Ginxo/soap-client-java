@@ -5,9 +5,9 @@
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
  */
 
-package com.b7f2.ws.service;
+package com.b7f2.ws.kike.service;
 
-public class ImplLoginServiceLocator extends org.apache.axis.client.Service implements com.b7f2.ws.service.ImplLoginService {
+public class ImplLoginServiceLocator extends org.apache.axis.client.Service implements ImplLoginService {
 
     public ImplLoginServiceLocator() {
     }
@@ -39,7 +39,7 @@ public class ImplLoginServiceLocator extends org.apache.axis.client.Service impl
         ImplLoginWSDDServiceName = name;
     }
 
-    public com.b7f2.ws.service.ImplLogin getImplLogin() throws javax.xml.rpc.ServiceException {
+    public ImplLogin getImplLogin() throws javax.xml.rpc.ServiceException {
        java.net.URL endpoint;
         try {
             endpoint = new java.net.URL(ImplLogin_address);
@@ -50,9 +50,9 @@ public class ImplLoginServiceLocator extends org.apache.axis.client.Service impl
         return getImplLogin(endpoint);
     }
 
-    public com.b7f2.ws.service.ImplLogin getImplLogin(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
+    public ImplLogin getImplLogin(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
         try {
-            com.b7f2.ws.service.ImplLoginSoapBindingStub _stub = new com.b7f2.ws.service.ImplLoginSoapBindingStub(portAddress, this);
+            ImplLoginSoapBindingStub _stub = new ImplLoginSoapBindingStub(portAddress, this);
             _stub.setPortName(getImplLoginWSDDServiceName());
             return _stub;
         }
@@ -72,8 +72,8 @@ public class ImplLoginServiceLocator extends org.apache.axis.client.Service impl
      */
     public java.rmi.Remote getPort(Class serviceEndpointInterface) throws javax.xml.rpc.ServiceException {
         try {
-            if (com.b7f2.ws.service.ImplLogin.class.isAssignableFrom(serviceEndpointInterface)) {
-                com.b7f2.ws.service.ImplLoginSoapBindingStub _stub = new com.b7f2.ws.service.ImplLoginSoapBindingStub(new java.net.URL(ImplLogin_address), this);
+            if (ImplLogin.class.isAssignableFrom(serviceEndpointInterface)) {
+                ImplLoginSoapBindingStub _stub = new ImplLoginSoapBindingStub(new java.net.URL(ImplLogin_address), this);
                 _stub.setPortName(getImplLoginWSDDServiceName());
                 return _stub;
             }

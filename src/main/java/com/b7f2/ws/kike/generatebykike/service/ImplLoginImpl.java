@@ -4,7 +4,9 @@
  * This class is not complete
  */
 
-package com.b7f2.ws.generatebykike.service;
+package com.b7f2.ws.kike.generatebykike.service;
+
+import com.b7f2.ws.kike.generatebykike.bean.BeanLogin;
 
 import java.util.logging.Logger;
 
@@ -20,20 +22,20 @@ import java.util.logging.Logger;
                       portName = "ImplLogin",
                       targetNamespace = "http://service.ws.b7f2.com",
                       wsdlLocation = "https://www.czidconnect.es:8443/messenger/services/ImplLogin?wsdl",
-                      endpointInterface = "com.b7f2.ws.generatebykike.service.ImplLogin")
+                      endpointInterface = "ImplLogin")
                       
 public class ImplLoginImpl implements ImplLogin {
 
     private static final Logger LOG = Logger.getLogger(ImplLoginImpl.class.getName());
 
     /* (non-Javadoc)
-     * @see com.b7f2.ws.generatebykike.service.ImplLogin#validaLogin(com.b7f2.ws.generatebykike.bean.BeanLogin  obj )*
+     * @see ImplLogin#validaLogin(BeanLogin  obj )*
      */
-    public com.b7f2.ws.generatebykike.bean.BeanLogin validaLogin(com.b7f2.ws.generatebykike.bean.BeanLogin obj) {
+    public BeanLogin validaLogin(BeanLogin obj) {
         LOG.info("Executing operation validaLogin");
         System.out.println(obj);
         try {
-            com.b7f2.ws.generatebykike.bean.BeanLogin _return = null;
+            BeanLogin _return = null;
             return _return;
         } catch (java.lang.Exception ex) {
             ex.printStackTrace();
